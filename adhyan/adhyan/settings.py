@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 import os
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'channels',
     'study.apps.StudyConfig',
     'users.apps.UsersConfig',
+    'books.apps.BooksConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,7 +128,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'study/static')
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -139,6 +148,9 @@ LOGIN_REDIRECT_URL = 'study-home'
 
 LOGIN_URL = 'login'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
 ASGI_APPLICATION = 'adhyan.asgi.application'
 
 # Channels
