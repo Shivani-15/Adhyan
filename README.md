@@ -1,5 +1,5 @@
 # Adhyan
-A web app for online group studies.
+### A web app for online group studies.
 
 To install latest version of channels:
 $ git clone git@github.com:django/channels.git
