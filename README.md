@@ -1,11 +1,11 @@
 # Adhyan
 ### A web app for online group studies.
 
-**To install latest version of channels:**
-$ git clone git@github.com:django/channels.git
-$ cd channels
-$ <activate your project’s virtual environment>
-(environment) $ pip install -e .  # the dot specifies the current repo
+**To install latest version of channels:** <br>
+ git clone git@github.com:django/channels.git <br>
+ cd channels <br>
+ <activate your project’s virtual environment> <br>
+ (environment) pip3 install -e .  
 
 **To install docker:**
 
