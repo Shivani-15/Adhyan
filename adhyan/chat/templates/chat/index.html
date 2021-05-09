@@ -6,10 +6,11 @@
     <title>Chat Rooms</title>
 </head>
 <body style="background-color:powderblue;">
-    What chat room would you like to enter?<br>
-    <input id="room-name-input" type="text" size="100"><br>
-    <input id="room-name-submit" type="button" value="Enter">
-
+    <div >
+        <h2>What study room would you like to enter?</h2><br>
+        <h4><input id="room-name-input" type="text" size="100"></h4><br>
+        <input id="room-name-submit" type="button" value="Enter">
+    </div>
     <script>
         document.querySelector('#room-name-input').focus();
         document.querySelector('#room-name-input').onkeyup = function(e) {
