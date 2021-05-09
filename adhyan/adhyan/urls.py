@@ -30,6 +30,7 @@ urlpatterns = [
     path('books/upload/', book_views.UploadBookView.as_view(), name='upload_book'),
     path('books/', book_views.BookListView.as_view(), name='book_list'),
     path('chat/', include('chat.urls')),
+    path('chat/', include('board.urls')),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout')
 
 ]
