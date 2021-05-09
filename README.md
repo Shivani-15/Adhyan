@@ -1,13 +1,13 @@
 # Adhyan
 ### A web app for online group studies.
 
-To install latest version of channels:
+**To install latest version of channels:**
 $ git clone git@github.com:django/channels.git
 $ cd channels
 $ <activate your project’s virtual environment>
 (environment) $ pip install -e .  # the dot specifies the current repo
 
-To install docker:
+**To install docker:**
 
 Follow this: (https://docs.docker.com/engine/install/)
 
@@ -33,7 +33,7 @@ echo \
  sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
  
  
-Tu run the file:
+**Tu run the file:**
 
 docker run -p 6379:6379 -d redis:5
 python3 manage.py runserver
