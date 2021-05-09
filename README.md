@@ -32,3 +32,9 @@ echo \
 
 docker run -p 6379:6379 -d redis:5 <br>
 python3 manage.py runserver
+
+**Resources:**
+
+https://channels.readthedocs.io/en/latest/tutorial/part_1.html <br>
+https://github.com/zhanto97/drawing-board <br>
+https://www.youtube.com/playlist?list=PLLxk3TkuAYnpm24Ma1XenNeq1oxxRcYFT
